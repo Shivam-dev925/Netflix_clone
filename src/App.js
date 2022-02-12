@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
+import SigninCompo from "./Components/SigninCompo";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomeCompo from "./Components/HomeCompo";
+import SignupCompo from "./Components/Signup";
+import UseAuthContextProvider from "./Context/AuthContext";
+import ProtectedCompo from "./ProtectedCompo";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <UseAuthContextProvider>
+        <Router basename="/">
+          <Routes>
+            <Route path="/" element={<HomeCompo />} />
+            <Route path="/explore" element={<ProtectedCompo />} />
+            <Route path="/Netflix/signin" element={<SigninCompo />} />
+            <Route path="/Netflix/Signup" element={<SignupCompo />} />
+          </Routes>
+        </Router>
+      </UseAuthContextProvider>
     </div>
   );
 }

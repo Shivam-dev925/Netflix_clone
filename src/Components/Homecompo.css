@@ -1,0 +1,91 @@
+.homenav{
+   margin-top: 20px;
+    width: 100wh;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.HomeBrandName{
+  width: 160px;
+  margin-left: 30px;
+}
+
+.navButton{
+    padding: 10px 20px ;
+    background-color: red;
+    border: none;
+border-radius: 0.3rem;
+font-weight: 600;
+margin-right: 40px;
+    color: #fff;
+
+}
+
+.titlesection{
+    width: 70%;
+    
+    color: #fff;
+    z-index: 99;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+.titlehome{
+    font-size: 3.5rem;
+    text-align: center;
+}
+.inputbtn{
+padding: 11px 50px;
+background-color: rgb(211, 11, 11);
+color: #fff;
+font-weight: 600;
+font-size: 30px;
+border: none;
+cursor: pointer;
+}
+
+.inputsection{
+    margin-top: 20px;
+width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.inputsection>input{
+    padding: 15px 10px;
+    border: none;
+    width: 60%;
+    
+    font-weight: 500;
+    font-size: 22px;
+}
+.div1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.div1>h1{
+    font-size: 51px;
+    margin-bottom: 53px;
+
+}
+
+.div1>h2{
+    font-size: 30px;
+}
+.accordian_div{
+    width: 70%;
+    color: #060606;
+}

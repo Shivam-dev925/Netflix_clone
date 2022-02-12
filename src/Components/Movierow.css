@@ -1,0 +1,40 @@
+.row {
+  margin-left: 15px;
+  margin-top: 50px;
+}
+
+.image_generic {
+  width: 260px;
+
+  padding: 6px;
+  transition: all 0.4s ease;
+  max-height: 350px;
+  object-fit: contain;
+}
+.image_large {
+  object-fit: contain;
+
+  padding: 6px;
+  width: 200px;
+  transition: all 0.4s ease;
+  max-height: 350px;
+}
+.image_large:hover {
+  cursor: pointer;
+  transform: scale(1.09);
+  transition: all 0.4s ease;
+}
+.image_generic:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+  transition: all 0.4s ease;
+}
+
+.image_wrapper {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.image_wrapper::-webkit-scrollbar {
+  display: none;
+}
