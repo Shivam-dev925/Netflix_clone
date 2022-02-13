@@ -34,6 +34,23 @@ function NetflixBanner() {
     background-position: center center center;
     background-size: cover;
     object-fit: cover;
+
+    @media (max-width: 400px) {
+      .ab {
+        margin-left: -20px;
+      }
+
+      #ac {
+        margin-left: 5px;
+        margin-top: 20px;
+      }
+      .poster_title {
+        display: none;
+      }
+      .bluredBottom {
+        margin-top: 120px;
+      }
+    }
   `;
   return (
     <>
@@ -44,19 +61,12 @@ function NetflixBanner() {
             singleMovie?.name ||
             singleMovie?.original_name}
         </h1>
-        <div style={{ marginLeft: "100px" }}>
+        <div className="ab">
           <button className="btn genericbutton btn-sm ">like</button>
 
           <button className="btn genericbutton btn-sm  ">play video</button>
         </div>
-        <div
-          style={{
-            marginLeft: "100px",
-            marginTop: "50px",
-            width: "400px",
-            height: "200px",
-          }}
-        >
+        <div id="ac">
           <p className=" lead description">{singleMovie.overview}</p>
         </div>
         <div className="bluredBottom"></div>

@@ -14,7 +14,7 @@ function Home5Compo() {
   };
 
   return (
-    <div style={Style}>
+    <div className="ab" style={Style}>
       <h1 style={{ fontSize: "60px", marginBottom: "50px" }}>
         Frequently Asked Questions
       </h1>

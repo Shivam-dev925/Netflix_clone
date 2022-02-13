@@ -3,6 +3,12 @@
   margin-top: 50px;
 }
 
+@media (max-width:400px){
+  .row{
+    margin-left: 0px;
+  }
+}
+
 .image_generic {
   width: 260px;
 
@@ -30,10 +36,33 @@
   transition: all 0.4s ease;
 }
 
+
 .image_wrapper {
   display: flex;
   overflow-y: hidden;
   overflow-x: scroll;
+}
+@media (max-width:400px){
+  .image_wrapper{
+    margin-left: 0px;
+  }
+
+  .image_large{
+    padding: 3px;
+    width: 150px;
+    transition: all 0.4s ease;
+    max-height: 300px;
+  }
+  .image_generic {
+    width: 180px;
+  
+    padding: 3px;
+    transition: all 0.4s ease;
+    max-height: 320px;
+    object-fit: contain;
+  }
+  
+
 }
 .image_wrapper::-webkit-scrollbar {
   display: none;

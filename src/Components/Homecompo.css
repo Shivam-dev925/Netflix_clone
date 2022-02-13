@@ -89,3 +89,10 @@ width: 100%;
     width: 70%;
     color: #060606;
 }
+@media  (max-width:400px){
+
+    .ab{
+        width:100%;
+       text-align: center;
+    }
+}

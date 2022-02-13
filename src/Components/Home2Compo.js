@@ -10,6 +10,36 @@ grid-template-rows: 1fr;
 grid-template-columns: 1fr 1fr;
 width: 100wh;
 border-bottom: 10px solid grey;
+
+@media (max-width:400px){
+height: 600px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+width: 100%;
+.div1>h1{
+    font-size: 21px;
+    margin-bottom: 40px;
+
+}
+.div1>h2{
+    font-size: 15px;
+    height:200px;
+}
+.div1,.div2{
+  width: 200px;
+  margin-bottom: 0px;
+ 
+  height: 200px;
+}
+
+.div2>img{
+  width: 100%;
+  margin: 0%;
+}
+
+}
 `
 function Home2Compo() {
   return (
